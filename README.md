@@ -2,13 +2,15 @@
 
 Colección de aplicaciones desarrolladas con **modelos de IA generativa** en **Python**.  
 
-Cada proyecto explora una aplicación práctica de la IA moderna: visión por computador, procesamiento de lenguaje natural, asistentes inteligentes y despliegues con **Docker** y **Gradio**.
+Cada proyecto explora una aplicación práctica de la IA moderna: visión por computador, procesamiento de lenguaje natural, asistentes inteligentes y análisis de voz con **Groq Llama 3.1**.  
+
+Todos los proyectos incluyen interfaz **Gradio**, contenedorización con **Docker**, y despliegue en **IBM Cloud**.
 
 ---
 
 ## 🚀 Tecnologías utilizadas
 
-- 🧠 **Modelos fundacionales** (BLIP, LLMs, RAG)
+- 🧠 **Modelos fundacionales** (BLIP, Whisper, Llama 3.1, RAG)
 
 - 🐍 **Python**
 
@@ -16,9 +18,11 @@ Cada proyecto explora una aplicación práctica de la IA moderna: visión por co
 
 - 🐳 **Docker** para contenedorización
 
-- ☁️ **IBM Cloud Code Engine** para despliegue
+- ☁️ **IBM Cloud Code Engine** para despliegue
 
-- 🤗 **Hugging Face Transformers**
+- 🤗 **Hugging Face Transformers**
+
+- ⚡ **Groq API** para inferencia acelerada
 
 ---
 
@@ -50,7 +54,7 @@ generative-ai-apps/
 
 │
 
-├── chatgpt-like-web-app/          # Proyecto 2: Chatbot tipo ChatGPT
+├── chatgpt-transformers/          # Proyecto 2: Chatbot tipo ChatGPT
 
 │   ├── src/
 
@@ -59,6 +63,18 @@ generative-ai-apps/
 │   ├── Dockerfile
 
 │   ├── requirements.txt
+
+│   └── README.md
+
+│
+
+├── enterprise-meeting-companion/ # Proyecto 3: Análisis de reuniones con Groq + Whisper
+
+│   ├── speech_analyzer.py
+
+│   ├── requirements.txt
+
+│   ├── Dockerfile
 
 │   └── README.md
 
@@ -74,11 +90,13 @@ generative-ai-apps/
 
 | --- | --- | --- |
 
-| **Generative AI Vision — Image Captioning App** | Genera subtítulos automáticos para imágenes usando el modelo BLIP. | Python, Gradio, Docker, Hugging Face |
+| **Generative AI Vision — Image Captioning App** | Genera subtítulos automáticos para imágenes usando el modelo BLIP. | Python, Gradio, Docker, Hugging Face |
 
-| **ChatGPT-like Web App** | Chatbot web con LLMs de código abierto y Flask. | Python, Flask, Hugging Face |
+| **Chatbot Transformers** | Chatbot web con LLMs de código abierto y Flask. | Python, Flask, Hugging Face |
 
-| *(Próximos proyectos)* | Asistente de voz, traductor Babel Fish, RAG con datos privados, etc. | IA generativa avanzada |
+| **Enterprise Meeting Companion** | Analiza reuniones empresariales con Whisper + Groq Llama 3.1. | Python, Gradio, Groq, Docker |
+
+| *(Próximos proyectos)* | Asistente de voz, traductor Babel Fish, RAG con datos privados, etc. | IA generativa avanzada |
 
 ---
 
