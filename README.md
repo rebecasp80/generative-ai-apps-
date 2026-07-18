@@ -1,28 +1,32 @@
 # 🤖 Generative AI Apps
 
-Colección de aplicaciones desarrolladas con **modelos de IA generativa** en **Python**.  
+Colección de aplicaciones desarrolladas con **modelos de IA generativa** en **Python**, centradas en chatbots inteligentes, análisis de voz y sistemas RAG con datos privados.
 
-Cada proyecto explora una aplicación práctica de la IA moderna: visión por computador, procesamiento de lenguaje natural, asistentes inteligentes y análisis de voz con **Groq Llama 3.1**.  
-
-Todos los proyectos incluyen interfaz **Gradio**, contenedorización con **Docker**, y despliegue en **IBM Cloud**.
+Cada proyecto incluye una **interfaz web moderna**, integración con **Groq** para inferencia acelerada y uso de **LangChain** para procesamiento avanzado de lenguaje.
 
 ---
 
 ## 🚀 Tecnologías utilizadas
 
-- 🧠 **Modelos fundacionales** (BLIP, Whisper, Llama 3.1, RAG)
+- 🧠 **Modelos fundacionales** (BLIP, Whisper, Llama 3.1, RAG, BLIP)
+
+- 🔗 **LangChain 1.x** para pipelines de IA modernos
 
 - 🐍 **Python**
 
 - 🎨 **Gradio** para interfaces interactivas
 
+- 🌐 **Flask** para servidores web ligeros
+
+- 🎨 **HTML/CSS/JS** para interfaces personalizadas
+- 
 - 🐳 **Docker** para contenedorización
 
 - ☁️ **IBM Cloud Code Engine** para despliegue
 
-- 🤗 **Hugging Face Transformers**
+- 🤗 **Hugging Face Transformers** para embeddings y modelos auxiliares
 
-- ⚡ **Groq API** para inferencia acelerada
+- ⚡ **Groq API** para inferencia de alta velocidad
 
 ---
 
@@ -80,7 +84,25 @@ generative-ai-apps/
 
 │
 
-└── ...                            # Próximos proyectos de IA generativa
+├── build-chatbot-for-your-data/     # Proyecto 4: Chatbot RAG para PDFs (Flask + Groq + LangChain)
+
+│   ├── app.py
+
+│   ├── worker.py
+
+│   ├── templates/
+
+│   ├── static/
+
+│   ├── uploads/
+
+│   ├── requirements.txt
+
+│   └── README.md
+
+│
+
+└── ...                               # Próximos proyectos de IA generativa
 
 ---
 
@@ -95,6 +117,8 @@ generative-ai-apps/
 | **Chatbot Transformers** | Chatbot web con LLMs de código abierto y Flask. | Python, Flask, Hugging Face |
 
 | **Enterprise Meeting Companion** | Analiza reuniones empresariales con Whisper + Groq Llama 3.1. | Python, Gradio, Groq, Docker |
+
+| **Chatbot RAG para PDFs** | Chatbot que responde preguntas sobre documentos PDF usando Groq + LangChain. | Python, Flask, LangChain, Groq |
 
 | *(Próximos proyectos)* | Asistente de voz, traductor Babel Fish, RAG con datos privados, etc. | IA generativa avanzada |
 
