@@ -1,6 +1,6 @@
 # 🤖 Generative AI Apps
 
-Colección de aplicaciones desarrolladas con **modelos de IA generativa** en **Python**, centradas en chatbots inteligentes, análisis de voz y sistemas RAG con datos privados.
+Colección de aplicaciones desarrolladas con modelos de IA generativa en Python, centradas en chatbots inteligentes, análisis de voz, traducción automática y sistemas RAG con datos privados.
 
 Cada proyecto incluye una **interfaz web moderna**, integración con **Groq** para inferencia acelerada y uso de **LangChain** para procesamiento avanzado de lenguaje.
 
@@ -27,6 +27,8 @@ Cada proyecto incluye una **interfaz web moderna**, integración con **Groq** pa
 - 🤗 **Hugging Face Transformers** para embeddings y modelos auxiliares
 
 - ⚡ **Groq API** para inferencia de alta velocidad
+
+- 🎙️ Web Speech API para reconocimiento y síntesis de voz en navegador
 
 ---
 
@@ -102,6 +104,20 @@ generative-ai-apps/
 
 │
 
+├── babel-voice-assistant/          # Proyecto 5: Traductor de voz multilingüe (Flask + Groq + LangChain)
+
+│   ├── app.py
+
+│   ├── worker.py
+
+│   ├── templates/
+
+│   ├── static/
+
+│   ├── requirements.txt
+
+│   └── README.md
+
 └── ...                               # Próximos proyectos de IA generativa
 
 ---
@@ -119,6 +135,8 @@ generative-ai-apps/
 | **Enterprise Meeting Companion** | Analiza reuniones empresariales con Whisper + Groq Llama 3.1. | Python, Gradio, Groq, Docker |
 
 | **Chatbot RAG para PDFs** | Chatbot que responde preguntas sobre documentos PDF usando Groq + LangChain. | Python, Flask, LangChain, Groq |
+
+| **Babel Voice Assistant** | Traductor de voz multilingüe con detección automática, STT y TTS integrados. | Python, Flask, LangChain, Groq, HTML/CSS/JS |
 
 | *(Próximos proyectos)* | Asistente de voz, traductor Babel Fish, RAG con datos privados, etc. | IA generativa avanzada |
 
