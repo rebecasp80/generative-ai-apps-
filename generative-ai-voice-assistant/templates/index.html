@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Voice Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header>
+            <h1>Generative AI Voice Assistant</h1>
+            <p class="subtitle">Traducción automática con voz</p>
+        </header>
+
+        <div class="language-selector">
+            <label>Idioma origen:</label>
+            <select id="source-lang">
+                <option value="auto" selected>Detectar automáticamente</option>
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+                <option value="fr">Francés</option>
+                <option value="de">Alemán</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Portugués</option>
+                <option value="ja">Japonés</option>
+                <option value="zh">Chino</option>
+                <option value="ru">Ruso</option>
+                <option value="ar">Árabe</option>
+            </select>
+
+            <label>Idioma destino:</label>
+            <select id="target-lang">
+                <option value="es">Español</option>
+                <option value="en" selected>Inglés</option>
+                <option value="fr">Francés</option>
+                <option value="de">Alemán</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Portugués</option>
+                <option value="ja">Japonés</option>
+                <option value="zh">Chino</option>
+                <option value="ru">Ruso</option>
+                <option value="ar">Árabe</option>
+            </select>
+        </div>
+
+        <div class="chat-box" id="chat-box"></div>
+
+        <div class="input-area">
+            <textarea id="text-input" placeholder="Escribe o usa el micrófono..."></textarea>
+
+            <div class="buttons">
+                <button id="record-btn">🎤</button>
+                <button id="send-btn">Enviar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
