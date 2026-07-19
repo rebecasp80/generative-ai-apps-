@@ -1,152 +1,102 @@
 # 🤖 Generative AI Apps
 
-Colección de aplicaciones desarrolladas con modelos de IA generativa en Python, centradas en chatbots inteligentes, análisis de voz, traducción automática y sistemas RAG con datos privados.
+Colección de **6 aplicaciones funcionales de IA generativa** desarrolladas en Python, centradas en visión por computador, chatbots inteligentes, asistentes de voz, traducción automática, análisis de reuniones y sistemas RAG sobre documentos privados.
 
-Cada proyecto incluye una **interfaz web moderna**, integración con **Groq** para inferencia acelerada y uso de **LangChain** para procesamiento avanzado de lenguaje.
-
----
-
-## 🚀 Tecnologías utilizadas
-
-- 🧠 **Modelos fundacionales** (BLIP, Whisper, Llama 3.1, RAG, BLIP)
-
-- 🔗 **LangChain 1.x** para pipelines de IA modernos
-
-- 🐍 **Python**
-
-- 🎨 **Gradio** para interfaces interactivas
-
-- 🌐 **Flask** para servidores web ligeros
-
-- 🎨 **HTML/CSS/JS** para interfaces personalizadas
- 
-- 🐳 **Docker** para contenedorización
-
-- ☁️ **IBM Cloud Code Engine** para despliegue
-
-- 🤗 **Hugging Face Transformers** para embeddings y modelos auxiliares
-
-- ⚡ **Groq API** para inferencia de alta velocidad
-
-- 🎙️ Web Speech API para reconocimiento y síntesis de voz en navegador
+Cada proyecto incluye interfaz web moderna, integración con **Groq** para inferencia acelerada y **LangChain 1.x** para pipelines de IA avanzados.
 
 ---
 
-## 📂 Estructura del repositorio
+## 🧩 Proyectos incluidos
+
+### 1. 🖼️ Generative AI Vision — Image Captioning
+
+Genera descripciones automáticas de imágenes con BLIP y Hugging Face. Interfaz con Gradio, containerizado con Docker y desplegado en IBM Cloud Code Engine.
+
+`Python · BLIP · Gradio · Hugging Face · Docker · IBM Cloud`
+
+### 2. 💬 Chatbot Transformers — Flask + Groq
+
+Chatbot conversacional con memoria de contexto, modo oscuro e interfaz estilo ChatGPT. Motor Llama-3.1-8B-Instant vía Groq.
+
+`Python · Flask · Groq · Llama 3.1 · HTML/CSS/JS`
+
+### 3. 🎙️ Enterprise Meeting Companion
+
+Analiza reuniones empresariales con transcripción automática (Whisper) y resumen ejecutivo con Groq Llama 3.1.
+
+`Python · Gradio · Whisper · Groq · Docker`
+
+### 4. 📄 Chatbot RAG para PDFs
+
+Chatbot que responde preguntas sobre documentos PDF propios usando RAG con LangChain y Groq como motor de inferencia.
+
+`Python · Flask · LangChain · Groq · RAG`
+
+### 5. 🌍 Babel Voice Assistant
+
+Traductor de voz multilingüe con detección automática de idioma, STT y TTS integrado en interfaz web.
+
+`Python · Flask · LangChain · Groq · Web Speech API · HTML/CSS/JS`
+
+### 6. 🗣️ Generative AI Voice Assistant
+
+Asistente de voz conversacional con detección automática de idioma, traducción en tiempo real y síntesis de voz.
+
+`Python · Flask · LangChain · Groq · HTML/CSS/JS`
+
+---
+
+## 🚀 Stack tecnológico
+
+| Capa | Tecnologías |
+
+|---|---|
+
+| Modelos | BLIP · Whisper · Llama 3.1 · Sentence Transformers |
+
+| IA Framework | LangChain 1.x (Runnables) |
+
+| Inferencia | Groq API |
+
+| Backend | Python · Flask · Gradio |
+
+| Frontend | HTML · CSS · JavaScript · Web Speech API |
+
+| Contenedorización | Docker |
+
+| Despliegue | IBM Cloud Code Engine |
+
+---
+
+## 📁 Estructura del repositorio
 
 generative-ai-apps/
 
 │
 
-├── README.md                # Este archivo (documentación general)
+├── README.md
 
-├── LICENSE                  # Licencia común para todos los proyectos
+├── LICENSE
 
-│
+├── generative-ai-vision-python/
 
-├── generative-ai-vision-python/   # Proyecto 1: BLIP + Gradio
+├── chatgpt-transformers/
 
-│   ├── src/
+├── enterprise-meeting-companion/
 
-│   ├── images/
+├── build-chatbot-for-your-data/
 
-│   ├── notebooks/
+├── babel-voice-assistant/
 
-│   ├── Dockerfile
-
-│   ├── requirements.txt
-
-│   └── README.md
-
-│
-
-├── chatgpt-transformers/          # Proyecto 2: Chatbot tipo ChatGPT
-
-│   ├── src/
-
-│   ├── templates/
-
-│   ├── Dockerfile
-
-│   ├── requirements.txt
-
-│   └── README.md
-
-│
-
-├── enterprise-meeting-companion/ # Proyecto 3: Análisis de reuniones con Groq + Whisper
-
-│   ├── speech_analyzer.py
-
-│   ├── requirements.txt
-
-│   ├── Dockerfile
-
-│   └── README.md
-
-│
-
-├── build-chatbot-for-your-data/     # Proyecto 4: Chatbot RAG para PDFs (Flask + Groq + LangChain)
-
-│   ├── app.py
-
-│   ├── worker.py
-
-│   ├── templates/
-
-│   ├── static/
-
-│   ├── uploads/
-
-│   ├── requirements.txt
-
-│   └── README.md
-
-│
-
-├── babel-voice-assistant/          # Proyecto 5: Traductor de voz multilingüe (Flask + Groq + LangChain)
-
-│   ├── app.py
-
-│   ├── worker.py
-
-│   ├── templates/
-
-│   ├── static/
-
-│   ├── requirements.txt
-
-│   └── README.md
-
-└── ...                               # Próximos proyectos de IA generativa
-
----
-
-🧩 Proyectos incluidos
-
-| Proyecto | Descripción | Tecnologías |
-
-| --- | --- | --- |
-
-| **Generative AI Vision — Image Captioning App** | Genera subtítulos automáticos para imágenes usando el modelo BLIP. | Python, Gradio, Docker, Hugging Face |
-
-| **Chatbot Transformers** | Chatbot web con LLMs de código abierto y Flask. | Python, Flask, Hugging Face |
-
-| **Enterprise Meeting Companion** | Analiza reuniones empresariales con Whisper + Groq Llama 3.1. | Python, Gradio, Groq, Docker |
-
-| **Chatbot RAG para PDFs** | Chatbot que responde preguntas sobre documentos PDF usando Groq + LangChain. | Python, Flask, LangChain, Groq |
-
-| **Babel Voice Assistant** | Traductor de voz multilingüe con detección automática, STT y TTS integrados. | Python, Flask, LangChain, Groq, HTML/CSS/JS |
-
-| *(Próximos proyectos)* | Asistente de voz, traductor Babel Fish, RAG con datos privados, etc. | IA generativa avanzada |
+└── generative-ai-voice-assistant/
 
 ---
 
 ## 👩‍💻 Autora
 
-Proyecto desarrollado por Rebeca Soto como parte de su portafolio profesional de Ingeniería de IA generativa.
+Desarrollado por **Rebeca Soto** como parte de su portafolio profesional de IA generativa y transformación digital.
 
-🔗 [linkedin.com/in/rebeca-soto-ai](https://linkedin.com/in/rebeca-soto-ai)  
+🔗 [linkedin.com/in/rebeca-soto-ai](https://linkedin.com/in/rebeca-soto-ai)
 
 🔗 [github.com/rebecasp80](https://github.com/rebecasp80)
 
@@ -154,6 +104,4 @@ Proyecto desarrollado por Rebeca Soto como parte de su portafolio profesional de
 
 ## 🪄 Licencia
 
-Este proyecto se distribuye bajo la licencia MIT.
-
-Consulta el archivo LICENSE para más detalles.
+Distribuido bajo licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
